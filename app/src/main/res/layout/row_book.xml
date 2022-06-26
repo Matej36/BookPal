@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="5dp"
+    app:cardCornerRadius="@dimen/card_cr_bookrow"
     app:cardUseCompatPadding="true"
-    app:contentPadding="5dp">
+    app:contentPadding="@dimen/card_cp_bookrow">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,9 +13,9 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/bookIv"
-            android:layout_width="70dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="@dimen/bookiv_width_bookrow"
+            android:layout_height="@dimen/bookiv_height_bookrow"
+            android:layout_marginEnd="@dimen/bookiv_margin_end_bookrow"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_twotone_book_genre_black"
@@ -29,7 +29,7 @@
             android:layout_toEndOf="@id/bookIv"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Book Title" />
+            android:text="@string/book_title_bookrow" />
 
         <TextView
             android:id="@+id/genreLabelTv"
@@ -37,9 +37,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/titleTv"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/genrelabel_margin_top_bookrow"
             android:layout_toEndOf="@+id/bookIv"
-            android:text="Genre:" />
+            android:text="@string/genre_bookrow" />
 
         <TextView
             android:id="@+id/genreTv"
@@ -47,11 +47,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/titleTv"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/genretv_margin_top_bookrow"
             android:layout_toEndOf="@+id/genreLabelTv"
             android:gravity="center_vertical"
-            android:padding="4dp"
-            android:text="Fantasy" />
+            android:padding="@dimen/genretv_padding_bookrow"
+            android:text="@string/fantasy_bookrow" />
 
         <TextView
             android:id="@+id/authorLabelTv"
@@ -59,9 +59,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/genreLabelTv"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/author_margin_top_bookrow"
             android:layout_toEndOf="@+id/bookIv"
-            android:text="Author:" />
+            android:text="@string/author_bookrow" />
 
         <TextView
             android:id="@+id/authorTv"
@@ -69,10 +69,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/genreLabelTv"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/authortv_margin_top_bookrow"
             android:layout_toEndOf="@+id/authorLabelTv"
             android:gravity="center_vertical"
-            android:padding="4dp"
+            android:padding="@dimen/authortv_padding_bookrow"
             android:text="J.R.R.Tolkien" />
 
     </RelativeLayout>

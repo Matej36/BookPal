@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.BookDetailsActivity">
 
-    <!--Toolbar-->
+
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/imagebtn_padding_book_details"
             android:src="@drawable/ic_back_white" />
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Book Details"
+            android:text="@string/book_details_book_details"
             android:textColor="@color/white" />
 
         <ImageButton
@@ -38,7 +38,7 @@
             android:layout_centerVertical="true"
             android:layout_toStartOf="@+id/toolbarDeleteBtn"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/imagebtn_padding_book_details"
             android:src="@drawable/ic_edit_book_white" />
 
         <ImageButton
@@ -48,7 +48,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/imagebtn_padding_book_details"
             android:src="@drawable/ic_delete_book_white" />
 
     </RelativeLayout>
@@ -67,8 +67,8 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/bookIv"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="@dimen/layout_height_iv_book_details"
+                android:layout_marginTop="@dimen/layout_margin_top_iv_book_details"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_book_gray" />
@@ -78,8 +78,8 @@
                 style="@style/TextAppearance.MaterialComponents.Caption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Genre"
+                android:layout_marginTop="@dimen/genre_tv_margin_top_book_details"
+                android:text="@string/genre_book_details"
                 android:textAlignment="center"
                 android:textColor="@color/teal_200" />
 
@@ -88,7 +88,7 @@
                 style="@style/TextAppearance.MaterialComponents.Headline4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Book Title"
+                android:text="@string/book_title_book_details"
                 android:textAlignment="center" />
 
 
@@ -103,7 +103,7 @@
                     style="@style/TextAppearance.MaterialComponents.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="by "
+                    android:text="@string/by_book_details"
                     android:textAlignment="center" />
 
                 <TextView
@@ -111,16 +111,16 @@
                     style="@style/TextAppearance.MaterialComponents.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="J.R.R Tolkien"
+                    android:text="@string/j_r_r_tolkien_book_details"
                     android:textAlignment="center" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
+                android:layout_height="@dimen/view_lay_height_book_details"
+                android:layout_marginTop="@dimen/view_lay_margin_top_book_details"
+                android:layout_marginBottom="@dimen/view_margin_bottom_book_details"
                 android:background="@drawable/shape_line_bg" />
 
             <RelativeLayout
@@ -132,8 +132,8 @@
                     style="@style/TextAppearance.MaterialComponents.Body1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Quotes" />
+                    android:padding="@dimen/quotes_padding_book_details"
+                    android:text="@string/quotes_book_details" />
 
 
                 <ImageButton
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:background="@android:color/transparent"
-                    android:padding="10dp"
+                    android:padding="@dimen/imgbtn_padding_book_details"
                     android:src="@drawable/ic_comment_add" />
 
 
@@ -166,20 +166,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="@dimen/margin_start_linear_layout_book_details"
+        android:layout_marginEnd="@dimen/margin_end_linear_layout_book_details"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/alreadyReadBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="@dimen/already_read_btn_margin_end_book_details"
             android:layout_weight="1"
-            android:text="Already Read"
+            android:text="@string/already_read_btn_book_details"
             android:textAllCaps="false"
-            android:textSize="10sp"
-            app:cornerRadius="8dp"
+            android:textSize="@dimen/text_size_already_read_btn"
+            app:cornerRadius="@dimen/already_read_btn_corner_radius_book_details"
             app:icon="@drawable/ic_dashboard_already_read"
             app:iconGravity="start" />
 
@@ -187,12 +187,12 @@
             android:id="@+id/currentlyReadingBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="@dimen/layout_margin_end_currently_reading_book_details"
             android:layout_weight="1"
-            android:text="Currently Reading"
+            android:text="@string/currently_reading_btn_book_details"
             android:textAllCaps="false"
-            android:textSize="10sp"
-            app:cornerRadius="8dp"
+            android:textSize="@dimen/curr_reading_btn_text_size_book_details"
+            app:cornerRadius="@dimen/cur_reading_btn_corner_radius_book_details"
             app:icon="@drawable/ic_dashboard_currently_reading"
             app:iconGravity="start" />
 
@@ -200,12 +200,12 @@
             android:id="@+id/wantToReadBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="@dimen/layout_margin_end_wantbtn_book_details"
             android:layout_weight="1"
-            android:text="Want To Read"
+            android:text="@string/want_to_read_book_details"
             android:textAllCaps="false"
-            android:textSize="10sp"
-            app:cornerRadius="8dp"
+            android:textSize="@dimen/text_size_want_to_read_book_details"
+            app:cornerRadius="@dimen/corner_radius_wantbtn_book_details"
             app:icon="@drawable/ic_dashboard_want_to_read"
             app:iconGravity="start" />
 
@@ -214,11 +214,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Add Favorite"
+            android:text="@string/add_favorite_book_details"
             android:textAllCaps="false"
-            android:textSize="10sp"
+            android:textSize="@dimen/text_size_favoritebtn_book_details"
             android:visibility="gone"
-            app:cornerRadius="8dp"
+            app:cornerRadius="@dimen/corner_radius_favbtn_book_details"
             app:icon="@drawable/ic_favorite_outline"
             app:iconGravity="top" />
 

@@ -10,17 +10,17 @@
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/rel_layout_height_profile"
         android:background="@drawable/shape_toolbar01">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/backFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="@dimen/back_margin_profile"
+            android:layout_marginTop="@dimen/back_margin_profile"
+            android:layout_marginEnd="@dimen/back_margin_profile"
+            android:layout_marginBottom="@dimen/back_margin_profile"
             android:src="@drawable/ic_back_black"
             app:fabSize="mini"
             app:tint="@color/white" />
@@ -31,28 +31,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/titletv_margin_top_profile"
             android:fontFamily="sans-serif-condensed"
-            android:text="Edit Profile"
+            android:text="@string/edit_profile_profile"
             android:textColor="@color/white" />
 
         <RelativeLayout
-            android:layout_width="117dp"
-            android:layout_height="117dp"
+            android:layout_width="@dimen/rel_layout_lay_width_profile"
+            android:layout_height="@dimen/rel_layout_lay_width_profile"
             android:layout_centerInParent="true"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="@dimen/rel_layout_margin_top_profile">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/profileIv"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
+                android:layout_width="@dimen/profileiv_profile"
+                android:layout_height="@dimen/profileiv_profile"
                 android:background="@color/white"
-                android:padding="2dp"
+                android:padding="@dimen/profileiv_padding_profile"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_person_gray"
                 app:shapeAppearanceOverlay="@style/styleCircleImage"
                 app:strokeColor="@color/purple_200"
-                app:strokeWidth="2dp" />
+                app:strokeWidth="@dimen/sw_profileiv_profile" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/pickImageFab"
@@ -61,7 +61,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/ic_add_photo_black"
-                app:fabCustomSize="35dp"
+                app:fabCustomSize="@dimen/pickimage_fabcustom_size"
                 app:tint="@color/white" />
 
         </RelativeLayout>
@@ -73,9 +73,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginStart="@dimen/rel_layout_margin_start_profile"
+        android:layout_marginTop="@dimen/relative_layout_margin_top_profile"
+        android:layout_marginEnd="@dimen/relative_layout_margin_end_profile">
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -83,9 +83,9 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
-            app:boxCornerRadiusTopEnd="5dp"
-            app:boxCornerRadiusTopStart="5dp"
+            android:hint="@string/name_profile"
+            app:boxCornerRadiusTopEnd="@dimen/name_cr_end_profile"
+            app:boxCornerRadiusTopStart="@dimen/name_cr_start_profile"
             app:startIconDrawable="@drawable/ic_twotone_name_black">
 
             <EditText
@@ -102,10 +102,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/nameTil"
-            android:layout_marginTop="8dp"
-            android:minHeight="60dp"
-            android:text="Update"
-            app:cornerRadius="8dp"
+            android:layout_marginTop="@dimen/update_margin_top_profile"
+            android:minHeight="@dimen/update_min_height_profile"
+            android:text="@string/update_profile"
+            app:cornerRadius="@dimen/update_cr_profile"
             app:icon="@drawable/ic_update_profile_black" />
 
     </RelativeLayout>

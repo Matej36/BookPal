@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:padding="10dp"
+            android:padding="@dimen/profile_btn_padding_book_list"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_person_white" />
 
@@ -29,8 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="8dp"
-            android:text="Dashboard User"
+            android:layout_marginTop="@dimen/title_margin_top_book_list"
+            android:text="@string/user_book_list"
             android:textColor="@color/white" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/titleTv"
             android:layout_centerHorizontal="true"
-            android:text="abc@example.com"
+            android:text="@string/abc_example_com_book_list"
             android:textColor="@color/white" />
 
         <ImageButton
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:padding="10dp"
+            android:padding="@dimen/logout_padding_book_list"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_logout_white" />
 
@@ -58,11 +58,11 @@
 
     <ImageView
         android:id="@+id/logoIv"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/logo_iv_width_dasbhoard"
+        android:layout_height="@dimen/logo_iv_height_dashboard"
         android:layout_below="@+id/toolbarRl"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/logo_iv_margin_top_dashboard"
         android:src="@drawable/logo" />
 
 
@@ -71,51 +71,51 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logoIv"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="@dimen/linlayout_padding_dashboard">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/myBooksBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="60dp"
-            android:text="My Books"
-            app:cornerRadius="8dp"
+            android:minHeight="@dimen/my_books_min_height_dashboard"
+            android:text="@string/my_books_dashboard"
+            app:cornerRadius="@dimen/my_books_btn_corner_radius_dashboard"
             app:icon="@drawable/ic_dashboard_my_books" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/favoritesBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="60dp"
-            android:text="Favorites"
-            app:cornerRadius="8dp"
+            android:minHeight="@dimen/favbtn_min_height_dashboard"
+            android:text="@string/favorites_dashboard"
+            app:cornerRadius="@dimen/favbtn_corner_radius_dashboard"
             app:icon="@drawable/ic_dashboard_favorite" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/alreadyReadBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="60dp"
-            android:text="Already Read"
-            app:cornerRadius="8dp"
+            android:minHeight="@dimen/already_read_btn_min_height_dashboard"
+            android:text="@string/already_read_dashboard"
+            app:cornerRadius="@dimen/alreadybtn_corner_radius_dashboard"
             app:icon="@drawable/ic_dashboard_already_read" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/currentlyReadingBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="60dp"
-            android:text="Currently Reading"
-            app:cornerRadius="8dp"
+            android:minHeight="@dimen/currently_reading_min_height_dashboard"
+            android:text="@string/currently_reading_dashboard"
+            app:cornerRadius="@dimen/curbtn_corner_radius_dashboard"
             app:icon="@drawable/ic_dashboard_currently_reading" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/wantToReadBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="60dp"
-            android:text="Want To Read"
-            app:cornerRadius="8dp"
+            android:minHeight="@dimen/wantbtn_min_height_dashboard"
+            android:text="@string/want_to_read_dashboard"
+            app:cornerRadius="@dimen/wantbtn_corner_radius_dashboard"
             app:icon="@drawable/ic_dashboard_want_to_read" />
 
     </LinearLayout>

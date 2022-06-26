@@ -10,37 +10,37 @@
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/layout_height_book_add"
         android:background="@drawable/shape_toolbar01">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/backFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/layout_margin_book_add"
             android:src="@drawable/ic_back_black"
             app:fabSize="mini"
             app:tint="@color/white" />
 
         <RelativeLayout
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="@dimen/layout_width_book_add"
+            android:layout_height="@dimen/layout_height2_book_add"
             android:layout_centerInParent="true"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="@dimen/layout_margin_top_book_add">
 
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/profileIv"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
+                android:layout_width="@dimen/layout_width_image_view_book_add"
+                android:layout_height="@dimen/layout_height_image_book_add"
                 android:background="@color/white"
                 android:layout_centerInParent="true"
-                android:padding="2dp"
+                android:padding="@dimen/padding_book_add"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_book_gray"
                 app:shapeAppearanceOverlay="@style/styleRoundedCornersImage10"
                 app:strokeColor="@color/purple_200"
-                app:strokeWidth="2dp" />
+                app:strokeWidth="@dimen/stroke_width_book_add" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/pickImageFab"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/ic_add_photo_black"
-                app:fabCustomSize="35dp"
+                app:fabCustomSize="@dimen/fabcustomsize_book_add"
                 app:tint="@color/white" />
 
         </RelativeLayout>
@@ -58,9 +58,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_top_tv_book_add"
             android:fontFamily="sans-serif-condensed"
-            android:text="Edit Book"
+            android:text="@string/edit_book_book_add"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -68,9 +68,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginStart="@dimen/scrollview_margin_start_book_add"
+        android:layout_marginTop="@dimen/scroll_view_margin_top_book_add"
+        android:layout_marginEnd="@dimen/scroll_view_margin_end_book_add">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -81,9 +81,9 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
-                app:boxCornerRadiusTopEnd="5dp"
-                app:boxCornerRadiusTopStart="10dp"
+                android:hint="@string/name_book_add"
+                app:boxCornerRadiusTopEnd="@dimen/box_corner_radius_book_add"
+                app:boxCornerRadiusTopStart="@dimen/boxcornerradiustopstart_book_add"
                 app:startIconDrawable="@drawable/ic_twotone_book_open_black">
 
                 <EditText
@@ -100,10 +100,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nameTil"
-                android:layout_marginTop="8dp"
-                android:hint="Genre"
-                app:boxCornerRadiusTopEnd="5dp"
-                app:boxCornerRadiusTopStart="5dp"
+                android:layout_marginTop="@dimen/margintop_textinput_genre_book_add"
+                android:hint="@string/genre_book_add"
+                app:boxCornerRadiusTopEnd="@dimen/box_corner_radius_top_end_genre_book_add"
+                app:boxCornerRadiusTopStart="@dimen/box_corner_radius_top_start_book_add"
                 app:startIconDrawable="@drawable/ic_twotone_book_genre_black">
 
                 <EditText
@@ -120,10 +120,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/genreTil"
-                android:layout_marginTop="8dp"
-                android:hint="Author"
-                app:boxCornerRadiusTopEnd="5dp"
-                app:boxCornerRadiusTopStart="5dp"
+                android:layout_marginTop="@dimen/margin_top_author_book_add"
+                android:hint="@string/author_book_add"
+                app:boxCornerRadiusTopEnd="@dimen/box_corner_radius_top_end_author_book_add"
+                app:boxCornerRadiusTopStart="@dimen/box_corner_radius_top_start_author_book_add"
                 app:startIconDrawable="@drawable/ic_twotone_name_black">
 
                 <EditText
@@ -139,10 +139,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/authorTil"
-                android:layout_marginTop="20dp"
-                android:minHeight="60dp"
-                android:text="Update"
-                app:cornerRadius="8dp"
+                android:layout_marginTop="@dimen/submitbtn_margin_top_book_add"
+                android:minHeight="@dimen/submitbtn_min_height"
+                android:text="@string/submitbtn_book_add"
+                app:cornerRadius="@dimen/submitbtn_corner_radius_book_add"
                 app:icon="@drawable/ic_book_submit_black" />
 
         </RelativeLayout>
