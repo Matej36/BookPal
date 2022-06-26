@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Book Pal</string>
+    <string name="welcome_to_book_pal">Welcome to Book Pal</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="forgot_password_recover">Forgot Password? <b>Recover</b></string>
+</resources>

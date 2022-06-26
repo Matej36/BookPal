@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "326926860874",
+    "firebase_url": "https://book-pal-default-rtdb.firebaseio.com",
+    "project_id": "book-pal",
+    "storage_bucket": "book-pal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326926860874:android:aa737cdf74d98b2b6ddcb3",
+        "android_client_info": {
+          "package_name": "com.example.bookpal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326926860874-6uph88386rmo0ta3l7ckjhuhui0374g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFYumG72spl4d2IZORMBkG6tgUBM8PgF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326926860874-6uph88386rmo0ta3l7ckjhuhui0374g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

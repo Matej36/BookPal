@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/drawable/ic_comment_add.xml" value="0.1835" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_add.xml" value="0.1453804347826087" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_edit.xml" value="0.15670289855072464" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_list_favorite.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_list_library.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_book_list_my.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_login.xml" value="0.15670289855072464" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_profile_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_quote_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/dialog_comment_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/dialog_quote_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/row_book.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/row_comment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Matej/Desktop/BookPal_Code02 Remove Books Option/BookPal/app/src/main/res/layout/row_quote.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
