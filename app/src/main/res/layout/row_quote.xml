@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="5dp"
+    app:cardCornerRadius="@dimen/card_cr_quoterow"
     app:cardUseCompatPadding="true"
-    app:contentPadding="10dp">
+    app:contentPadding="@dimen/card_cp_quoterow">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toStartOf="@id/favoriteBtn"
-            android:text="The actual quote of the user which can be of multiple lines." />
+            android:text="@string/the_quote_of_the_user_which_can_be_of_multiple_lines_quoterow" />
 
 
         <ImageButton
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/favbtn_padding_quoterow"
             android:src="@drawable/ic_favorite_outline" />
 
         <TextView
@@ -36,8 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/quoteTv"
-            android:layout_marginTop="5dp"
-            android:text="Page: " />
+            android:layout_marginTop="@dimen/pagelabel_margin_top_quoterow"
+            android:text="@string/page_quoterow" />
 
 
         <TextView
@@ -46,9 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/quoteTv"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/pagenumber_margin_top_quoterow"
             android:layout_toEndOf="@id/quotePageNumberLabelTv"
-            android:text="133" />
+            android:text="@string/_133_quoterow" />
 
         <TextView
             android:id="@+id/dateTv"
@@ -58,7 +58,7 @@
             android:layout_below="@+id/quoteTv"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="5dp"
-            android:text="dd/MM/yyyy" />
+            android:text="@string/dd_mm_yyyy_quoterow" />
 
     </RelativeLayout>
 

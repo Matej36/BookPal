@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:padding="5dp"
+        android:padding="@dimen/back_padding"
         android:src="@drawable/ic_back_black" />
 
     <TextView
@@ -21,8 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:padding="5dp"
-        android:text="Add Quote"
+        android:padding="@dimen/title_padding_addquote"
+        android:text="@string/add_quote_addquote"
         android:textAlignment="center" />
 
 
@@ -32,10 +32,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/backBtn"
-        android:layout_marginTop="20dp"
-        android:hint="Quote"
-        app:boxCornerRadiusTopEnd="5dp"
-        app:boxCornerRadiusTopStart="5dp"
+        android:layout_marginTop="@dimen/quote_addquote"
+        android:hint="@string/quote_addquote"
+        app:boxCornerRadiusTopEnd="@dimen/tilcr_end_addquote"
+        app:boxCornerRadiusTopStart="@dimen/tilcr_start_addquote"
         app:startIconDrawable="@drawable/ic_twotone_comment_black">
 
         <EditText
@@ -52,10 +52,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/quoteTil"
-        android:layout_marginTop="10dp"
-        android:hint="Page Number"
-        app:boxCornerRadiusTopEnd="5dp"
-        app:boxCornerRadiusTopStart="5dp"
+        android:layout_marginTop="@dimen/numtil_margin_top_addquote"
+        android:hint="@string/page_number_addquote"
+        app:boxCornerRadiusTopEnd="@dimen/tilcr_start_addquote"
+        app:boxCornerRadiusTopStart="@dimen/tilcr_end_addquote"
         app:startIconDrawable="@drawable/ic_twotone_comment_black">
 
         <EditText
@@ -71,10 +71,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/pageNumberTil"
-        android:layout_marginTop="20dp"
-        android:minHeight="60dp"
-        android:text="Submit"
-        app:cornerRadius="8dp"
+        android:layout_marginTop="@dimen/submit_margin_top_addquote"
+        android:minHeight="@dimen/submitbtn_min_height_addquote"
+        android:text="@string/submit_addquote"
+        app:cornerRadius="@dimen/submit_cr_addquote"
         app:icon="@drawable/ic_login_black"/>
 
 </RelativeLayout>

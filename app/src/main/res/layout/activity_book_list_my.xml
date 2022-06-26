@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/back_padding_book_list"
             android:src="@drawable/ic_back_white" />
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="My Books"
+            android:text="@string/my_books_book_list"
             android:textColor="@color/white" />
 
         <ImageButton
@@ -38,7 +38,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:padding="10dp"
+            android:padding="@dimen/addbtn_padding_book_list"
             android:src="@drawable/ic_book_add_white" />
 
     </RelativeLayout>
@@ -47,19 +47,19 @@
         android:id="@+id/searchEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/search_margin_book_list"
         android:background="@drawable/shape_back_search"
         android:drawableStart="@drawable/ic_search_gray"
-        android:drawablePadding="10dp"
-        android:hint="Search"
+        android:drawablePadding="@dimen/search_padding_book_list"
+        android:hint="@string/search_book_list"
         android:inputType="textPersonName"
-        android:padding="10dp" />
+        android:padding="@dimen/search_pad_book_list" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/booksRv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/rv_margin_top_book_list"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/row_book" />
 

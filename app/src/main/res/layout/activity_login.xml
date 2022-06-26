@@ -9,27 +9,27 @@
     <RelativeLayout
         android:id="@+id/toolbarRl"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/rel_layout_height_login"
         android:background="@drawable/shape_toolbar01">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/backFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="@dimen/back_margin_start_login"
             app:tint="@color/white"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/back_margin_top_login"
+            android:layout_marginEnd="@dimen/back_margin_end_login"
+            android:layout_marginBottom="@dimen/back_margin_botom_login"
             android:src="@drawable/ic_back_black"
             app:fabSize="mini" />
 
         <ImageView
             android:id="@+id/iconIv"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
+            android:layout_width="@dimen/iconiv_width_login"
+            android:layout_height="@dimen/iconiv_height_login"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/iconiv_margin_top_login"
             android:src="@drawable/ic_person_white" />
 
         <TextView
@@ -38,9 +38,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/iconIv"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/margintop_tv_login"
             android:fontFamily="sans-serif-condensed"
-            android:text="Please Login"
+            android:text="@string/please_login_login"
             android:textColor="@color/white" />
 
     </RelativeLayout>
@@ -48,9 +48,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="30dp">
+        android:layout_marginStart="@dimen/sv_margin_start_login"
+        android:layout_marginTop="@dimen/sv_margin_top_login"
+        android:layout_marginEnd="@dimen/sv_margin_end_login">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -61,9 +61,9 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                app:boxCornerRadiusTopEnd="5dp"
-                app:boxCornerRadiusTopStart="5dp"
+                android:hint="@string/email_login"
+                app:boxCornerRadiusTopEnd="@dimen/email_cr_top_end_login"
+                app:boxCornerRadiusTopStart="@dimen/email_cr_radius_top_start_login"
                 app:startIconDrawable="@drawable/ic_twotone_email_black">
 
                 <EditText
@@ -80,10 +80,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/emailTil"
-                android:layout_marginTop="8dp"
-                android:hint="Password"
-                app:boxCornerRadiusTopEnd="5dp"
-                app:boxCornerRadiusTopStart="5dp"
+                android:layout_marginTop="@dimen/passtil_margin_top_login"
+                android:hint="@string/password_login"
+                app:boxCornerRadiusTopEnd="@dimen/pass_cr_top_end_login"
+                app:boxCornerRadiusTopStart="@dimen/pass_cr_top_start_login"
                 app:passwordToggleEnabled="true"
                 app:startIconDrawable="@drawable/ic_twotone_password_black">
 
@@ -103,8 +103,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/passwordTil"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:padding="5dp"
+                android:layout_marginTop="@dimen/forgot_layout_margin_top_login"
+                android:padding="@dimen/forgot_padding_login"
                 android:text="@string/forgot_password_recover" />
 
 
@@ -113,10 +113,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/forgotTv"
-                android:layout_marginTop="20dp"
-                android:minHeight="60dp"
-                android:text="Login"
-                app:cornerRadius="8dp"
+                android:layout_marginTop="@dimen/login_margin_top_login"
+                android:minHeight="@dimen/login_min_height_login"
+                android:text="@string/login_login"
+                app:cornerRadius="@dimen/login_cr_login"
                 app:icon="@drawable/ic_login_black" />
 
         </RelativeLayout>
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:padding="10dp"
+        android:padding="@dimen/no_account_padding_login"
         android:text="@string/new_user_signup" />
 
 

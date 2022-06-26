@@ -147,10 +147,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cPasswordTil"
-                android:layout_marginTop="20dp"
-                android:minHeight="60dp"
-                android:text="Sign Up"
-                app:cornerRadius="8dp"
+                android:layout_marginTop="@dimen/margin_top_signup"
+                android:minHeight="@dimen/signup_minheight_signup"
+                android:text="@string/sign_up_signup"
+                app:cornerRadius="@dimen/signup_cr_signuo"
                 app:icon="@drawable/ic_signup_black" />
 
         </RelativeLayout>
