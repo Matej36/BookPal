@@ -2,7 +2,7 @@ package com.example.bookpal.models
 
 class ModelQuote {
 
-    //variables, should be with same spellings and type as we added in firebase
+    
     var id: String = ""
     var bookId: String = ""
     var uid: String = ""
@@ -11,10 +11,10 @@ class ModelQuote {
     var timestamp: Long = 0
     var isInMyFavorite: Boolean = false
 
-    //empty constructor, required by firebase, if not added the app will crash
+
     constructor()
 
-    //all param constructor
+    
     constructor(
         id: String,
         bookId: String,
