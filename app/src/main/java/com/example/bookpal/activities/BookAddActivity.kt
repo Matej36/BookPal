@@ -159,12 +159,12 @@ class BookAddActivity : AppCompatActivity() {
         reference.child("$timestamp")
             .updateChildren(hashmap)
             .addOnSuccessListener {
-                //book added in db
+             
                 progressDialog.dismiss()
                 MyApplication.toast(this, "Book Added...")
             }
             .addOnFailureListener { e ->
-                //failed to add book in db
+               
                 progressDialog.dismiss()
                 MyApplication.toast(this, "Failed to add due to ${e.message}")
             }
