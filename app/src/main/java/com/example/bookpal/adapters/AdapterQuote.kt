@@ -120,14 +120,14 @@ class AdapterQuote : RecyclerView.Adapter<AdapterQuote.HolderQuote>, Filterable 
                     model.isInMyFavorite = isInMyFavorite
                     Log.d(TAG, "onDataChange: Book $bookId Exists: $isInMyFavorite")
                     if (isInMyFavorite) {
-                        //available in favorite
+                        
                         Log.d(TAG, "onDataChange: available in favorite ")
 
                         holder.favoriteBtn.setImageResource(R.drawable.ic_favorite_filled)
                     } else {
-                        //not available in favorite
+                        
                         Log.d(TAG, "onDataChange: not available in favorite")
-                        //set drawable top icon
+                       
                         holder.favoriteBtn.setImageResource(R.drawable.ic_favorite_outline)
                     }
                 }
@@ -193,11 +193,11 @@ class AdapterQuote : RecyclerView.Adapter<AdapterQuote.HolderQuote>, Filterable 
         builder.setTitle("Choose Options")
             .setItems(options){d,i->
                 if (i == 0) {
-                    //Edit
+                   
                     editQuoteDialog(model, holder)
                 }
                 else if (i == 1) {
-                    //Delete
+                    
                     deleteQuoteDialog(model, holder)
                 }
             }
