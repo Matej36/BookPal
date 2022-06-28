@@ -269,7 +269,7 @@ class BookEditActivity : AppCompatActivity() {
     private val cameraActivityResultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult(),
         ActivityResultCallback<ActivityResult> { result ->
-            //get uri of image
+            
             if (result.resultCode == RESULT_OK) {
                 val data = result.data
 
