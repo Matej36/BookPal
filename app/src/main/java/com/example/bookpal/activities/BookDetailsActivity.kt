@@ -140,8 +140,7 @@ class BookDetailsActivity : AppCompatActivity() {
                     val isInMyLibrary = snapshot.exists()
                     Log.d(TAG, "checkIsLibrary onDataChange: Book $bookId Exists: $isInMyLibrary")
                     if (isInMyLibrary) {
-                        val library = "${snapshot.child("library").value}" /*Already Read | Currently Reading | Want To Read*/
-                        //available in library
+                        val library = "${snapshot.child("library").value}" 
                         Log.d(TAG, "checkIsLibrary onDataChange: available in library $library")
 
                         if (library.equals(Constants.BOOK_LIBRARY_ALREADY_READ, true)){
@@ -183,15 +182,15 @@ class BookDetailsActivity : AppCompatActivity() {
                     isInMyFavorite = snapshot.exists()
                     Log.d(TAG, "onDataChange: Book $bookId Exists: $isInMyFavorite")
                     if (isInMyFavorite) {
-                        //available in favorite
+                        
                         Log.d(TAG, "onDataChange: available in favorite ")
-                        // set drawable top icon
+                   
                         binding.favoriteBtn.setIconResource(R.drawable.ic_favorite_filled)
                         binding.favoriteBtn.text = "Remove Favorite"
                     } else {
-                        //not available in favorite
+                        
                         Log.d(TAG, "onDataChange: not available in favorite")
-                        //set drawable top icon
+                        
                         binding.favoriteBtn.setIconResource(R.drawable.ic_favorite_outline)
                         binding.favoriteBtn.text = "Add Favorite"
                     }
